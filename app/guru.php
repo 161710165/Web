@@ -12,7 +12,7 @@ class guru extends Model
 
     public function Ekskul()
 	{
-		return $this->hasMany('App\ekskul','guru_id');
+		return $this->hasOne('App\ekskul','guru_id');
 	}
 
 }
